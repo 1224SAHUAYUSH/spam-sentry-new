@@ -34,6 +34,8 @@ user_input = st.text_area("✍️ Type your message below:", "", height=150,)
 # Expander for additional info
 with st.expander("ℹ️ How does this work?"):
     st.write("This model analyzes your message using **Natural Language Processing (NLP)** and classifies it as **Spam** or **Ham**.")
+    st.write("Spam-Sentry uses Naive Bayes Classifier for classification.")
+    st.write("This model has an accuracy of 95%.")
 
 # Button to Predict
 if st.button("🚀 Analyze Message"):
